@@ -1,50 +1,55 @@
 import random
+import os
+usr_response = 'y' 
 
-print("This is a dice stimulator")
-x = "y"
-while x == "y":
-    number = random.randint(1,6)
+op_array = []
+while usr_response == 'y':
+	routput = random.randint(1, 6)
+	op_array.append(routput)
+	if routput == 1:
+		print("=========")
+		print("         ")
+		print("    0    ")
+		print("         ")
+		print("=========")
 
-    if number == 1:
-        print("===========")
-        print("|         |")
-        print("|    O    |")
-        print("|         |")
-        print("===========")
+	if routput == 2:
+		print("=========")
+		print("    0    ")
+		print("         ")
+		print("    0    ")
+		print("=========")
 
-    if number == 2:
-        print("===========")
-        print("|         |")
-        print("| O     O |")
-        print("|         |")
-        print("===========")
+	if routput == 3:
+		print("=========")
+		print("  0      ")
+		print("    0    ")
+		print("      0  ")
+		print("=========")
 
-    if number == 3:
-        print("===========")
-        print("|    O    |")
-        print("|    O    |")
-        print("|    O    |")
-        print("===========")
-        
-    if number == 4:
-        print("===========")
-        print("| O     O |")
-        print("|         |")
-        print("| O     O |")
-        print("===========")
-        
-    if number == 5:
-        print("===========")
-        print("| O     O |")
-        print("|    O    |")
-        print("| O     O |")
-        print("===========")
-        
-    if number == 6:
-        print("===========")
-        print("| O     O |")
-        print("| O     O |")
-        print("| O     O |")
-        print("===========")
-    
-    x =  input("Press y to roll again ")
+	if routput == 4:
+		print("=========")
+		print("  0   0  ")
+		print("         ")
+		print("  0   0  ")
+		print("=========")
+
+
+	if routput == 5:
+		print("=========")
+		print(" 0     0 ")
+		print("    0    ")
+		print(" 0     0 ")
+		print("=========")
+
+	if routput == 6:
+		print("=========")
+		print(" 0     0 ")
+		print(" 0     0 ")
+		print(" 0     0 ")
+		print("=========")
+	
+	usr_response = input("Press Y to continue.\t")
+	os.system("cls")
+
+print(op_array)
